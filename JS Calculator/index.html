@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Digital Calculator</title>
+    </head>
+    <body>
+
+        <!-- Calculator Screen -->
+        <div class="container">
+            <h2 class="header">Basic Maths Calx</h2>
+            <form action="input">
+                <input type="text" id="screen" readonly placeholder="" >
+               
+            </form>
+
+
+
+            <!-- Calculator Buttons -->
+            <br>
+            <br>
+            <input type="button" onclick="shownum('1')" value="1" id="num">
+            <input type="button" onclick="shownum('2')" value="2" id="num">
+            <input type="button" onclick="shownum('3')" value="3" id="num">
+            <input type="button" onclick="ON('0')" value="ON" id="forminput" disabled>
+            <label for="">
+                <input type="checkbox" name="" id="">
+            </label>
+            <br>
+            <br>
+            <input type="button" onclick="shownum('4')" value="4" id="num">
+            <input type="button" onclick="shownum('5')" value="5" id="num">
+            <input type="button" onclick="shownum('6')" value="6" id="num">
+            <input type="button" onclick="shownum('-')" value="-" id="signs">
+            <input type="button" onclick="shownum('+')" value="+" id="signs">
+            <br>
+            <br>
+            <input type="button" onclick="shownum('7')" value="7" id="num">
+            <input type="button" onclick="shownum('8')" value="8" id="num">
+            <input type="button" onclick="shownum('9')" value="9" id="num">
+            <input type="button" onclick="shownum('/')" value="/" id="signs">
+            <input type="button" onclick="shownum('*')" value="X" id="signs">
+            
+            <br>
+            <br>
+            
+            <button class="btn solebtn" onclick="solve()"><strong>=</strong></button>
+            <input type="button" onclick="shownum('.')" value="." id="num">
+            <input type="button" onclick="shownum('0')" value="0" id="num">
+            <button class="delete" onclick="delback()"> <strong>DEL</strong> </button>
+            <br>
+            <button class="cancel" onclick="clearme()"> <strong>CAN</strong> </button>
+
+        </div>
+        
+        <p class="or">orem ipsum dolor sit amet consectetur adipisicing elit <br> Id ratione excepturi voluptas rem aliquid aliquam modi explicabo dolorum, doloremque atque,<br>
+        quod hic saepe alias eligendi ipsam iusto aperiam facere itaque.</p>
+
+        <!-- Javascript -->
+        <script>
+            document.getElementById("screen").innerHTML = Date();
+            function ON (val){
+                document.getElementById("screen").value=val;
+            }
+        
+            function screen(val)
+            {
+                document.getElementById("screen").value=val;
+            }
+        
+            function shownum(val)
+            {
+                document.getElementById("screen").value+=val;
+            }
+        
+            function solve(){
+                try{
+                    screen(eval(document.getElementById("screen").value))
+                }
+                catch(e) {
+                    screen('Error')
+                }
+            }
+            function clearme(){
+                document.getElementById("screen").value = "";
+            }
+        
+            function delback() {
+                var valueNeeded = document.getElementById("screen").value;
+                var finalValueNeeded = valueNeeded.substr(0, valueNeeded.length-1);
+                document.getElementById("screen").value=finalValueNeeded;
+            }
+        
+            // alert('Welcome to Digital Calculator')
+        </script>
+    </body>
+</html>

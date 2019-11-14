@@ -1,0 +1,105 @@
+.container{
+    /* background-color: rgb(212, 206, 206); */
+    background-color: white;
+    border: 2px solid rgb(211, 203, 203);
+    height: 450px;
+    width: 290px;
+    margin: 100px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.header{
+    font-family: cursive;
+    padding-left: 20px;
+}
+#screen{
+    height: 30px;
+    width: 250px;
+    background-color: white;
+}
+/* #forminput{
+    float: right;
+    margin-right: 20px;
+    font-weight: bolder;
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+} */
+#onoff{
+    float: right;
+    margin-right: 20px;
+    font-weight: bolder;
+    background-color: rgb(252, 77, 77);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+#signs{
+    float: right;
+    margin-right: 20px;
+    font-weight: bolder;
+    /* background-color: rgb(196, 188, 188); */
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+#num{
+    padding: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+background-color: #4CAF50; /* Green */
+color: white;
+}
+.btn{
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+.cancel{
+    float: right;
+    margin-right: 30px;
+    font-family: tahoma;
+    margin-top: -30px;
+    /* background-color: rgb(196, 188, 188); */
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+}
+
+.delete{
+    float: right;
+    margin-right: 30px;
+    font-family: tahoma;
+    margin-top: -10px;
+    /* background-color: rgb(196, 188, 188); */
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+}
+
+.or{
+    float: right;
+    margin-top: -500px;
+    margin-right: 100px;
+    border: none;
+}
+.signs{
+    font-weight: bolder;
+    font: 100px;
+    border: none;
+}
